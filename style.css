@@ -1,0 +1,189 @@
+.topbar .page {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .nav {
+                display: flex;
+                gap: 30px;
+                list-style: none;
+            }
+
+            .bg {
+                position: relative;
+                height: 500px;
+
+                background-image: url("taipei.jpg");
+                background-size: cover;
+                background-position: center;
+
+                display: flex;
+                align-items: center;
+            }
+            .bg-content {
+                position: relative;
+                color: white;
+                padding: 60px;
+            }
+            .bg-content h1 {
+                font-size: 60px;
+            }
+            .overlay {
+                position: absolute;
+
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                background: linear-gradient(
+                    to right,
+                    rgba(0,0,0,0.85),
+                    rgba(0,0,0,0.1)
+                );
+            }
+
+            .section_title {
+                color: gold;
+            }
+            .image-text {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .image-text-left {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .image-text-right {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .test {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .mouse {
+                color: gray;
+            }
+            .page {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .centerd {
+                justify-content: center;
+                display: flex;
+            }
+            .container {
+                position: relative;
+                width: 30%;
+                overflow: hidden;
+                padding: 20px;
+            }
+
+            .image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition : .25s;
+                background-color: magenta;
+            }
+
+            .container:hover .overlay {
+            opacity: 1;
+            }
+
+            .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            .toprow_1 {
+                background: black;
+                color: white;
+                width: 20%;
+                padding: 20px;
+            }
+            .toprow_2 {
+                background: black;
+                color: white;
+                width: 40%;
+                padding: 20px;
+            }
+            .topcol {
+                background-color: darkgray;
+                width: 20%;
+                padding: 20px;
+            }
+            .reg_odd {
+                background-color: bisque;
+                width: 20%;
+                padding: 20px;
+            }
+            .reg_odd_2 {
+                background-color: bisque;
+                width: 40%;
+                padding: 20px;
+            }
+            .reg_odd_price {
+                text-align: right;
+                background-color: bisque;
+                width: 20%;
+                padding: 20px;
+            }
+            .reg_even {
+                background-color: lightgray;
+                width: 20%;
+                padding: 20px;
+            }
+            .reg_even_price {
+                text-align: right;
+                background-color: lightgray;
+                padding: 20px;
+            }
+            .reg_even_2 {
+                background-color: lightgray;
+                width: 40%;
+                padding: 20px;
+            }
+            .special {
+                text-align: center;
+                width: 40%;
+                background-color: lightcoral;
+                color: red
+            }
+            #top, #discover, #neigborhoods, #planner, #gallary {
+                padding-left: 80px;
+                padding-right: 80px;
+            }

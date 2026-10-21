@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>topbar</title>
+        <style>
+            .topbar .page {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .nav {
+                display: flex;
+                gap: 30px;
+                list-style: none;
+            }
+
+            .bg {
+                position: relative;
+                height: 500px;
+
+                background-image: url("taipei.jpg");
+                background-size: cover;
+                background-position: center;
+
+                display: flex;
+                align-items: center;
+            }
+            .bg-content {
+                position: relative;
+                color: white;
+                padding: 60px;
+            }
+            .bg-content h1 {
+                font-size: 60px;
+            }
+            .overlay {
+                position: absolute;
+
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                background: linear-gradient(
+                    to right,
+                    rgba(0,0,0,0.85),
+                    rgba(0,0,0,0.1)
+                );
+            }
+
+            .section_title {
+                color: gold;
+            }
+            .image-text {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .image-text-left {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .image-text-right {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .test {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .mouse {
+                color: gray;
+            }
+            .page {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .centerd {
+                justify-content: center;
+                display: flex;
+            }
+            .container {
+                position: relative;
+                width: 30%;
+                overflow: hidden;
+                padding: 20px;
+            }
+
+            .image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition : .25s;
+                background-color: magenta;
+            }
+
+            .container:hover .overlay {
+            opacity: 1;
+            }
+
+            .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            .toprow_1 {
+                background: black;
+                color: white;
+                width: 20%;
+                padding: 20px;
+            }
+            .toprow_2 {
+                background: black;
+                color: white;
+                width: 40%;
+                padding: 20px;
+            }
+            .topcol {
+                background-color: darkgray;
+                width: 20%;
+                padding: 20px;
+            }
+            .reg_odd {
+                background-color: bisque;
+                width: 20%;
+                padding: 20px;
+            }
+            .reg_odd_2 {
+                background-color: bisque;
+                width: 40%;
+                padding: 20px;
+            }
+            .reg_odd_price {
+                text-align: right;
+                background-color: bisque;
+                width: 20%;
+                padding: 20px;
+            }
+            .reg_even {
+                background-color: lightgray;
+                width: 20%;
+                padding: 20px;
+            }
+            .reg_even_price {
+                text-align: right;
+                background-color: lightgray;
+                padding: 20px;
+            }
+            .reg_even_2 {
+                background-color: lightgray;
+                width: 40%;
+                padding: 20px;
+            }
+            .special {
+                text-align: center;
+                width: 40%;
+                background-color: lightcoral;
+                color: red
+            }
+            #top, #discover, #neigborhoods, #planner, #gallary {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="topbar">
+            <div class="page">
+                <a href="#top">Taipei.</a>
+
+                <ul class="nav">
+                    <li><a href="#discover">Discover</a></li>
+                    <li><a href="#neigborhoods">Neigborhoods</a></li>
+                    <li><a href="#planner">Planner</a></li>
+                    <li><a href="#gallary">Gallary</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="bg">
+            <div class="overlay"></div>
+            <div class="bg-content">
+                <h1>Nighttime<br>Taipei<br>City</h1>
+                <p>This is Taipei City. Truly a city that never sleeps.</p>
+            </div>
+        </section>
+        <section id="discover">
+            <p class="section_title">01: Discover</p>
+            <h2>The bright capital</h2>
+            <div class="image-text-left">
+                <img src="discover.jpg" class="test">
+                <p>Discover Taipei, the vibrant capital of Taiwan, where modern innovation meets centuries of tradition. This exciting city offers an unforgettable experience filled with culture, history, delicious food, and breathtaking scenery.
+                <br>
+                Begin your journey at Taipei 101, one of the city's most iconic landmarks, offering spectacular panoramic views. Explore the historic streets of Dadaocheng, where traditional architecture, local shops, and charming cafés create a unique atmosphere. Visit the National Palace Museum to discover remarkable treasures of Chinese history and art.
+                <br>
+                Taipei is also famous for its lively night markets. At places like Raohe Night Market, visitors can enjoy delicious street food, discover local specialties, and experience the city's energetic nightlife.
+                <br>
+                For nature lovers, Taipei offers beautiful mountains, peaceful parks, and scenic hiking trails. Take a relaxing trip to Beitou's hot springs or ride the Maokong Gondola for stunning views of the surrounding landscape.
+                <br>
+                Getting around is easy thanks to Taipei's efficient public transportation system, including its modern MRT network, which connects major attractions and neighborhoods.
+                <br>
+                Whether you're interested in exploring ancient temples, experiencing Taiwanese culture, or enjoying modern city life, Taipei has something for everyone. Discover its hidden gems, welcoming atmosphere, and unforgettable experiences that make every visit truly special.</p>
+            </div>
+        </section>
+        <section id="neigborhoods">
+            <p class="section_title">02: Neigborhoods</p>
+            <h2>Walk the streetds</h2>
+            <div class="image-text-right">
+                <img src="neighborhoods.jpg" class="test">
+                <p>Taipei is a city of diverse neighborhoods, each offering its own unique atmosphere, attractions, and cultural experiences. From bustling shopping districts to peaceful historic streets, exploring Taipei's neighborhoods reveals the city's fascinating character.
+                <br>
+                Ximending is one of Taipei's most vibrant areas, famous for its colorful streets, trendy shops, entertainment venues, and lively nightlife. Popular among young people, it offers an exciting combination of fashion, food, and modern culture.
+                <br>
+                Da'an is known for its comfortable residential atmosphere, stylish cafés, and beautiful green spaces. Da'an Forest Park provides a peaceful escape from the busy city, making the neighborhood perfect for relaxation.
+                <br>
+                Dadaocheng, located within Datong District, showcases Taipei's historical heritage. Its traditional buildings, tea shops, and local markets offer visitors a glimpse into the city's past.
+                <br>
+                Xinyi represents Taipei's modern side, featuring impressive skyscrapers, luxury shopping malls, and the iconic Taipei 101. It is a major destination for shopping, dining, and entertainment.
+                <br>
+                Meanwhile, Beitou offers a completely different experience with its natural hot springs, mountain scenery, and relaxing atmosphere.
+                <br>
+                Thanks to Taipei's extensive MRT network, exploring these neighborhoods is convenient and enjoyable. Each district has something special to discover, making Taipei a fascinating city full of contrasts, traditions, and unforgettable experiences for visitors.</p>
+            </div>
+        </section>
+        <section id="planner">
+            <p class="section_title">03: Travel Planner</p>
+            <h2>Three days in Taipei</h2>
+            <p>Plan your morning, afternoon, and evening with this simple three-day itinerary.</p>
+            <br>
+            <table>
+                <tr>
+                    <td class="toprow_1">Day</td>
+                    <td class="toprow_2">Morning</td>
+                    <td class="toprow_1">Afternoon</td>
+                    <td class="toprow_1">Evening</td>
+                </tr>
+                <tr>
+                    <td class="topcol">Day 1</td>
+                    <td class="reg_odd_2">Taipei 101</td>
+                    <td class="reg_odd">CKS Memorial</td>
+                    <td class="reg_odd">Longshan Temple</td>
+                </tr>
+                <tr>
+                    <td class="topcol">Day 2</td>
+                    <td class="reg_even_2">Taipei 101</td>
+                    <td class="reg_even">Taipei 101</td>
+                    <td class="reg_even">Night Market</td>
+                </tr>
+                <tr>
+                    <td class="topcol">Day 3</td>
+                    <td class="special" colspan="2">Big Event</td>
+                    <td class="reg_odd">Taipei 101</td>
+                </tr>
+            </table>
+            <br>
+            <h3>Travel Budget</h3>
+            <p>A simple budget for transportation</p>
+            <br>
+            <table>
+                <tr>
+                    <td class="toprow_2">Category</td>
+                    <td class="toprow_1">Item</td>
+                    <td class="toprow_2">Expected Cost</td>
+                </tr>
+                <tr>
+                    <td class="topcol" rowspan="2">Transportation</td>
+                    <td class="reg_odd">Metro</td>
+                    <td class="reg_odd_price">NT$ 30</td>
+                </tr>
+                <tr>
+                    <td class="reg_even">Bus</td>
+                    <td class="reg_even_price">NT$ 30</td>
+                </tr>
+                <tr>
+                    <td class="topcol" rowspan="2">Food</td>
+                    <td class="reg_odd">Lunch</td>
+                    <td class="reg_odd_price">NT$ 100</td>
+                </tr>
+                <tr>
+                    <td class="reg_even">Dinner</td>
+                    <td class="reg_even_price">NT$ 300</td>
+                </tr>
+            </table>
+        </section>
+        <section id="gallary">
+            <p class="section_title">04: Gallary</p>
+            <div class="page">
+                <h2>Three sides of Taipei</h2>
+                <p class="mouse">Move your mouse over each photograph
+                    <br>To reveal more information 
+                </p>
+            </div>
+            <dic class="centerd">
+                <div class="container">
+                    <img src="left.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">The People</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="center.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">The Streets</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="right.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">The Sights</div>
+                    </div>
+                </div>
+            </dic>
+            <p class="mouse">Hower your mouse over the pictures</p>
+        </section>
+    </body>
+</html>

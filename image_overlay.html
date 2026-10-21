@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Image overlay</title>
+        <style>
+            .container {
+                position: relative;
+                width: 50%;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            .image {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+                transition: filter 1s;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition : 1s;
+            }
+
+            .container:hover .image {
+                filter: blur(5px);
+                opacity: 1;
+            }
+
+            .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Image overlay test</h2>
+        <div class="container">
+            <img src="center.jpg" alt="Avatar" class="image">
+            <div class="overlay">
+                <div class="text">Taipei City</div>
+            </div>
+        </div>
+    </body>
+</html>

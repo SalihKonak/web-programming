@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tables</title>
+        <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        .head_time {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            background-color: gray;
+        }
+        .head_day {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            background-color: gray;
+        }
+        .reg_time_odd {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            background-color: darkgray;
+        }
+        .reg_day_odd {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            background-color: darkgray;
+        }
+        .reg_time_even {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            background-color: lightgray;
+        }
+        .reg_day_even {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            background-color: lightgray;
+        }
+        .spec_green {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            background-color: lightgreen;
+        }
+        .spec_red {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            background-color: lightcoral;
+        }
+        .spec_blue {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            background-color: lightblue;
+        }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td class="head_time">Time</td>
+                <td class="head_day">Mon</td>
+                <td class="head_day">Tue</td>
+                <td class="head_day">Wed</td>
+            </tr>
+            <tr>
+                <td class="reg_time_odd">7:30 AM</td>
+                <td class="reg_day_odd">Breakfast</td>
+                <td class="reg_day_odd">Breakfast</td>
+                <td class="reg_day_odd">Breakfast</td>
+            </tr>
+            <tr>
+                <td class="reg_time_even">8:00 AM</td>
+                <td class="spec_green" rowspan="2">Business: Lecture<br>Bldg B, Rm 256</td>
+                <td class="spec_red" rowspan="3">Physics: Lab <br>Bldg 1, Rm 309</td>
+                <td class="spec_green" rowspan="2">Business: Lecture<br>Bldg B, Rm 256</td>
+            </tr>
+            <tr>
+                <td class="reg_time_odd">8:30 AM</td>
+            </tr>
+            <tr>
+                <td class="reg_time_even">9:00 AM</td>
+                <td class="spec_blue" rowspan="2">Applied Math<br>Bldg H, Rm 100</td>
+                <td class="spec_blue" rowspan="2">Applied Math<br>Bldg H, Rm 100</td>
+            </tr>
+            <tr>
+                <td class="reg_time_odd">9:30 AM</td>
+                <td class="reg_day_odd"></td>
+            </tr>
+            <tr>
+                <td class="reg_time_even">10:00 AM</td>
+                <td class="reg_day_even"></td>
+                <td class="reg_day_even"></td>
+                <td class="reg_day_even"></td>
+            </tr>
+            <tr>
+                <td class="reg_time_odd">10:30 AM</td>
+                <td class="reg_day_odd"></td>
+                <td class="reg_day_odd"></td>
+                <td class="reg_day_odd"></td>
+            </tr>
+            <tr>
+                <td class="reg_time_even">11:00 AM</td>
+                <td class="reg_day_even"></td>
+                <td class="reg_day_even"></td>
+                <td class="reg_day_even"></td>
+            </tr>
+            <tr>
+                <td class="reg_time_odd">11:30 AM</td>
+                <td class="reg_day_odd"></td>
+                <td class="reg_day_odd"></td>
+                <td class="reg_day_odd"></td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gradient</title>
+        <style>
+            .bg {
+                position: relative;
+                height: 500px;
+
+                background-image: url("taipei.jpg");
+                background-size: cover;
+                background-position: center;
+
+                display: flex;
+                align-items: center;
+            }
+            .bg-content {
+                position: relative;
+                color: white;
+                padding: 60px;
+            }
+            .bg-content h1 {
+                font-size: 60px;
+            }
+            .overlay {
+                position: absolute;
+
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                background: linear-gradient(
+                    to right,
+                    rgba(0,0,0,0.99),
+                    rgba(0,0,0,0.05)
+                );
+            }
+        </style>
+    </head>
+    <body>
+        <section class="bg">
+            <div class="overlay"></div>
+            <div class="bg-content">
+                <h1>Nighttime<br>Taipei<br>City</h1>
+                <p>This is Taipei City. Truly a city that never sleeps.</p>
+            </div>
+        </section>
+    </body>
+</html>
