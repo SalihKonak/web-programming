@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Static vs. Live Collections</h1>
+        <p class="intro">Hello</p>
+        <p class="intro">World</p>
+        <p class="note">Goodbye</p>
+        <button onclick="addParagraph()">Add Paragraph</button>
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <script>
+            const x = document.querySelectorAll(".intro");
+            const y = document.getElementsByClassName("intro");
+
+            function addParagraph() {
+                const p = document.createElement("p");
+                p.className = "intro";
+                p.innerHTML = "New Paragraph";
+                document.body.appendChild(p);
+                document.getElementById("result1").textContent = x.length
+                document.getElementById("result2").textContent = y.length
+            }
+        </script>
+    </body>
+</html>

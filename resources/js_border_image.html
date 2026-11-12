@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .border_display {
+                border: 5px;
+                border-color: aqua;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="text">Hello World</h1>
+        <div id="image" class="border_display"><img src="lena.jpg" alt="lena"></div>
+        <br>
+        <button type="button" onclick="document.getElementById('text').style.color = 'red'">change color</button>
+        <input type="button" value="Add border" onclick="document.getElementById('image').style.borderStyle='solid'">
+    </body>
+</html>

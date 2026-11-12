@@ -1,156 +1,141 @@
 <!DOCTYPE html>
+
 <html>
     <head>
-        <title>topbar</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>Come to Stuttgart</title>
+        <link rel="stylesheet" href="css_folder/index_style.css">
+        <script src="js_folder/index_js.js" defer></script>
     </head>
     <body>
         <header class="topbar">
-            <div class="page">
-                <a href="#top">Taipei.</a>
-
-                <ul class="nav">
-                    <li><a href="#discover">Discover</a></li>
-                    <li><a href="#neigborhoods">Neigborhoods</a></li>
-                    <li><a href="#planner">Planner</a></li>
-                    <li><a href="#gallary">Gallary</a></li>
+            <div class="topbar_page" id="topbar">
+                <ul class="topbar_nav">
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="topics/city.html">STG</a></li>
+                    <li><a href="topics/state.html">BW</a></li>
+                    <li><a href="topics/information.html">Info</a></li>
+                </ul>
+                <ul class="topbar_nav">
+                    <li><a href="#the_city">The City</a></li>
+                    <li><a href="#the_state">The State</a></li>
+                    <li><a href="#places_to_be">Places to be</a></li>
+                    <li><a href="#usefull_to_know">Usefull to know</a></li>
+                    <li><a href="#topbar">Stuttgart</a></li>
                 </ul>
             </div>
         </header>
-        <section class="bg">
-            <div class="overlay"></div>
-            <div class="bg-content">
-                <h1>Nighttime<br>Taipei<br>City</h1>
-                <p>This is Taipei City. Truly a city that never sleeps.</p>
+        <section id="top" class="bg">
+            <div class="bg_overlay"></div>
+            <div class="bg_content">
+                <h1>Welcome to<br>Stuttgart</h1>
+                <p>A decently sized city of history.</p>
             </div>
         </section>
-        <section id="discover">
-            <p class="section_title">01: Discover</p>
-            <h2>The bright capital</h2>
-            <div class="image-text-left">
-                <img src="discover.jpg" class="test">
-                <p>Discover Taipei, the vibrant capital of Taiwan, where modern innovation meets centuries of tradition. This exciting city offers an unforgettable experience filled with culture, history, delicious food, and breathtaking scenery.
-                <br>
-                Begin your journey at Taipei 101, one of the city's most iconic landmarks, offering spectacular panoramic views. Explore the historic streets of Dadaocheng, where traditional architecture, local shops, and charming cafés create a unique atmosphere. Visit the National Palace Museum to discover remarkable treasures of Chinese history and art.
-                <br>
-                Taipei is also famous for its lively night markets. At places like Raohe Night Market, visitors can enjoy delicious street food, discover local specialties, and experience the city's energetic nightlife.
-                <br>
-                For nature lovers, Taipei offers beautiful mountains, peaceful parks, and scenic hiking trails. Take a relaxing trip to Beitou's hot springs or ride the Maokong Gondola for stunning views of the surrounding landscape.
-                <br>
-                Getting around is easy thanks to Taipei's efficient public transportation system, including its modern MRT network, which connects major attractions and neighborhoods.
-                <br>
-                Whether you're interested in exploring ancient temples, experiencing Taiwanese culture, or enjoying modern city life, Taipei has something for everyone. Discover its hidden gems, welcoming atmosphere, and unforgettable experiences that make every visit truly special.</p>
-            </div>
-        </section>
-        <section id="neigborhoods">
-            <p class="section_title">02: Neigborhoods</p>
-            <h2>Walk the streetds</h2>
-            <div class="image-text-right">
-                <img src="neighborhoods.jpg" class="test">
-                <p>Taipei is a city of diverse neighborhoods, each offering its own unique atmosphere, attractions, and cultural experiences. From bustling shopping districts to peaceful historic streets, exploring Taipei's neighborhoods reveals the city's fascinating character.
-                <br>
-                Ximending is one of Taipei's most vibrant areas, famous for its colorful streets, trendy shops, entertainment venues, and lively nightlife. Popular among young people, it offers an exciting combination of fashion, food, and modern culture.
-                <br>
-                Da'an is known for its comfortable residential atmosphere, stylish cafés, and beautiful green spaces. Da'an Forest Park provides a peaceful escape from the busy city, making the neighborhood perfect for relaxation.
-                <br>
-                Dadaocheng, located within Datong District, showcases Taipei's historical heritage. Its traditional buildings, tea shops, and local markets offer visitors a glimpse into the city's past.
-                <br>
-                Xinyi represents Taipei's modern side, featuring impressive skyscrapers, luxury shopping malls, and the iconic Taipei 101. It is a major destination for shopping, dining, and entertainment.
-                <br>
-                Meanwhile, Beitou offers a completely different experience with its natural hot springs, mountain scenery, and relaxing atmosphere.
-                <br>
-                Thanks to Taipei's extensive MRT network, exploring these neighborhoods is convenient and enjoyable. Each district has something special to discover, making Taipei a fascinating city full of contrasts, traditions, and unforgettable experiences for visitors.</p>
-            </div>
-        </section>
-        <section id="planner">
-            <p class="section_title">03: Travel Planner</p>
-            <h2>Three days in Taipei</h2>
-            <p>Plan your morning, afternoon, and evening with this simple three-day itinerary.</p>
-            <br>
-            <table>
-                <tr>
-                    <td class="toprow_1">Day</td>
-                    <td class="toprow_2">Morning</td>
-                    <td class="toprow_1">Afternoon</td>
-                    <td class="toprow_1">Evening</td>
-                </tr>
-                <tr>
-                    <td class="topcol">Day 1</td>
-                    <td class="reg_odd_2">Taipei 101</td>
-                    <td class="reg_odd">CKS Memorial</td>
-                    <td class="reg_odd">Longshan Temple</td>
-                </tr>
-                <tr>
-                    <td class="topcol">Day 2</td>
-                    <td class="reg_even_2">Taipei 101</td>
-                    <td class="reg_even">Taipei 101</td>
-                    <td class="reg_even">Night Market</td>
-                </tr>
-                <tr>
-                    <td class="topcol">Day 3</td>
-                    <td class="special" colspan="2">Big Event</td>
-                    <td class="reg_odd">Taipei 101</td>
-                </tr>
-            </table>
-            <br>
-            <h3>Travel Budget</h3>
-            <p>A simple budget for transportation</p>
-            <br>
-            <table>
-                <tr>
-                    <td class="toprow_2">Category</td>
-                    <td class="toprow_1">Item</td>
-                    <td class="toprow_2">Expected Cost</td>
-                </tr>
-                <tr>
-                    <td class="topcol" rowspan="2">Transportation</td>
-                    <td class="reg_odd">Metro</td>
-                    <td class="reg_odd_price">NT$ 30</td>
-                </tr>
-                <tr>
-                    <td class="reg_even">Bus</td>
-                    <td class="reg_even_price">NT$ 30</td>
-                </tr>
-                <tr>
-                    <td class="topcol" rowspan="2">Food</td>
-                    <td class="reg_odd">Lunch</td>
-                    <td class="reg_odd_price">NT$ 100</td>
-                </tr>
-                <tr>
-                    <td class="reg_even">Dinner</td>
-                    <td class="reg_even_price">NT$ 300</td>
-                </tr>
-            </table>
-        </section>
-        <section id="gallary">
-            <p class="section_title">04: Gallary</p>
-            <div class="page">
-                <h2>Three sides of Taipei</h2>
-                <p class="mouse">Move your mouse over each photograph
-                    <br>To reveal more information 
+        <section id="the_city">
+            <p class="section_title">The Capital of Schwaben</p>
+            <h1 class="section_subtitle">The City that is Stuttgart</h1>
+            <div class="in_page"><a href="topics/city.html">Come take a look.</a></div>
+            <div class="image_text_left">
+                <img src="pictures/stuttgart_img1.webp" class="image_text_image" alt="stuttgart">
+                <p>
+                    Stuttgart is the capital and largest city of the German state of Baden-Württemberg, located in southwestern Germany. With approximately 630,000 inhabitants, it is the sixth-largest city in Germany and serves as an important economic, cultural, and administrative center.
+                    <br>
+                    The city is situated in a valley surrounded by hills, forests, and vineyards, giving it a distinctive landscape. Stuttgart has a long history dating back to the 10th century, when it was established as a horse-breeding settlement. It later became the capital of the Kingdom of Württemberg.
+                    <br>
+                    Today, Stuttgart is internationally recognized as a center of the automotive industry. Major companies such as Mercedes-Benz and Porsche have their headquarters in the region. Both manufacturers operate museums showcasing their history and technological developments. The city is also home to numerous engineering, research, and technology institutions.
+                    <br>
+                    Stuttgart offers several cultural attractions, including the New Palace, the Old Castle, the State Gallery, and the Stuttgart State Opera. Its largest annual celebrations include the Cannstatter Volksfest, one of Germany's biggest beer festivals, and the Stuttgart Christmas Market.
+                    <br>
+                    Public transportation consists of suburban trains (S-Bahn), light rail (Stadtbahn), buses, and regional railway connections. Stuttgart Hauptbahnhof serves as a major railway hub connecting the city to other German and European destinations.
+                    <br>
+                    Despite its industrial importance, Stuttgart offers extensive green spaces, including Schlossgarten and Rosensteinpark. Its combination of economic strength, cultural heritage, educational institutions, and natural surroundings makes Stuttgart one of Germany's most significant cities.
                 </p>
             </div>
-            <dic class="centerd">
-                <div class="container">
-                    <img src="left.jpg" alt="Avatar" class="image">
-                    <div class="overlay">
-                        <div class="text">The People</div>
-                    </div>
-                </div>
-                <div class="container">
-                    <img src="center.jpg" alt="Avatar" class="image">
-                    <div class="overlay">
-                        <div class="text">The Streets</div>
-                    </div>
-                </div>
-                <div class="container">
-                    <img src="right.jpg" alt="Avatar" class="image">
-                    <div class="overlay">
-                        <div class="text">The Sights</div>
-                    </div>
-                </div>
-            </dic>
-            <p class="mouse">Hower your mouse over the pictures</p>
         </section>
+        <section id="the_state">
+            <p class="section_title">The Länd</p>
+            <h1 class="section_subtitle">The State of Baden-Württemberg</h1>
+            <div class="in_page"><a href="topics/state.html">Come take a look.</a></div>
+            <br>
+            <div class="image_text_right">
+                <img src="pictures/baden-Württemberg_img1.jpg" class="image_text_image" alt="baden-württemberg">
+                <p>
+                    Baden-Württemberg is a federal state in southwestern Germany, bordering France, Switzerland, and the German states of Bavaria, Hesse, and Rhineland-Palatinate. With approximately 11.2 million inhabitants, it is Germany's third-largest state by population. Its capital and largest city is Stuttgart.
+                    <br>
+                    The state was established in 1952 through the merger of Württemberg-Baden, Württemberg-Hohenzollern, and Baden. Today, it is one of Germany's most economically prosperous and industrially developed regions.
+                    <br>
+                    Baden-Württemberg is particularly renowned for its automotive and engineering industries. Major companies such as Mercedes-Benz, Porsche, Bosch, and SAP are headquartered here. The state is also an important center for scientific research, innovation, and higher education, with prestigious universities in Heidelberg, Freiburg, Tübingen, and Karlsruhe.
+                    <br>
+                    Geographically, Baden-Württemberg features diverse landscapes, including the Black Forest, the Swabian Jura, the Rhine Valley, and Lake Constance. These regions attract visitors through their natural beauty, hiking trails, historic towns, and recreational opportunities.
+                    <br>
+                    The state has a rich cultural heritage influenced by its historical regions of Baden, Württemberg, and Swabia. Traditional cuisine includes Spätzle, Maultaschen, and Black Forest cake. Popular attractions include Heidelberg Castle, Hohenzollern Castle, and the historic city of Ulm.
+                    <br>
+                    Baden-Württemberg is also known for its strong education system, extensive transportation infrastructure, and environmental initiatives. Combining industrial innovation, historical traditions, and scenic landscapes, it plays a central role in Germany's economy and cultural identity.    
+                </p>
+            </div>
+        </section>
+        <section id="usefull_to_know">
+            <p class="section_title">Be Prepaired</p>
+            <h1 class="section_subtitle">Useful to know</h1>
+            <div class="heading_bar">
+                <h2>Costs</h2>
+                <div>
+                    <label for="currency_selection">Select currency:</label>
+                    <select id="currency_selection">
+                        <option value="EUR">€ Euro</option>
+                        <option value="USD">$ US Dollar</option>
+                        <option value="GBP">£ British Pound</option>
+                        <option value="TWD">$ Taiwan Dollar</option>
+                    </select>
+                </div>
+            </div>
+            <div class="table_container">
+                <table class="table_def">
+                    <tr class="table_top">
+                        <td class="table_top_cell">Category</td>
+                        <td class="table_top_cell">Item</td>
+                        <td class="table_top_cell">Cost</td>
+                    </tr>
+                    <tr class="table_table_even">
+                        <td class="table_table_title" rowspan="3">Transport (Expencive)</td>
+                        <td class="table_table_title">Single Fare</td>
+                        <td class="table_table_cell" id="single_fare_display">3.30 €</td>
+                    </tr>
+                    <tr class="table_table_odd">
+                        <td class="table_table_title">Day Fare (Whole Network)</td>
+                        <td class="table_table_cell" id="day_fare_display">17.20 €</td>
+                    </tr>
+                    <tr class="table_table_even">
+                        <td class="table_table_title">Week Fare (Whole Network)</td>
+                        <td class="table_table_cell" id="week_fare_display">102.00 €</td>
+                    </tr>
+                    <tr class="table_table_odd">
+                        <td class="table_table_title" rowspan="2">ccommodation and Food</td>
+                        <td class="table_table_title">Hotel a night</td>
+                        <td class="table_table_cell" id="hotel_a_night">100 €</td>
+                    </tr>
+                    <tr class="table_table_even">
+                        <td class="table_table_title">Restaurant</td>
+                        <td class="table_table_cell" id="restaurant">25 €</td>
+                    </tr>
+                </table>
+            <div class="in_page"><a href="topics/information.html">click here for more information.</a></div>
+            </div>
+        </section>
+        <br>
+        <footer class="bottombar">
+            <div class="bottombar_page" id="bottombar">
+                <ul class="bottombar_nav">
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="topics/city.html">STG</a></li>
+                    <li><a href="topics/state.html">BW</a></li>
+                    <li><a href="topics/information.html">Info</a></li>
+                </ul>
+                <ul class="bottombar_nav">
+                    <li><a href="#topbar">Stuttgart</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

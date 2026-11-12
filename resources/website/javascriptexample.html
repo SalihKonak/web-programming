@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS example</title>
+</head>
+<body>
+    <p>Table from 2*1 to 9*9</p>
+    <div id="demo"></div>
+    <script>
+        let table = "<table border='2'>";
+
+        for (let i = 2; i <= 9; i++) {
+            table += "<tr>";
+
+            for (let j = 1; j <= 9; j++) {
+                table += `<td>${i} * ${j} = ${i*j}</td>`;
+            }
+
+            table += "</tr>";
+        }
+
+        table += "</table>";
+
+        document.getElementById("demo").innerHTML = table;
+    </script>
+</body>
+</html>
