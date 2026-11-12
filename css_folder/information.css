@@ -27,7 +27,7 @@ body {
     color: #ff0;
 }
 .topbar_nav a:visited {
-    color: #0f0;
+    color: #000;
 }
 
 #top, #topbar, #bottombar, #transport, #hotels, #food {
@@ -114,5 +114,5 @@ body {
     color: #ff0;
 }
 .bottombar_nav a:visited {
-    color: #0f0;
+    color: #F9C700;
 }
