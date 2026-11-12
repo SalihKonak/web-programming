@@ -20,14 +20,14 @@ body {
 .topbar_nav a:link {
     color: #000;
 }
+.topbar_nav a:visited {
+    color: #000;
+}
 .topbar_nav a:hover {
     color: #f00;
 }
 .topbar_nav a:active {
     color: #ff0;
-}
-.topbar_nav a:visited {
-    color: #000;
 }
 
 #top, #topbar, #bottombar, #general, #major_cities, #history, #politics {
@@ -107,12 +107,12 @@ body {
 .bottombar_nav a:link {
     color: #F9C700;
 }
+.bottombar_nav a:visited {
+    color: #F9C700;
+}
 .bottombar_nav a:hover {
     color: #f00;
 }
 .bottombar_nav a:active {
     color: #ff0;
-}
-.bottombar_nav a:visited {
-    color: #F9C700;
 }
