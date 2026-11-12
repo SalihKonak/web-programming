@@ -17,10 +17,7 @@ body {
     padding-bottom: 0;
     padding-top: 0;
 }
-.topbar_nav a:link {
-    color: #000;
-}
-.topbar_nav a:visited {
+.topbar_nav a {
     color: #000;
 }
 .topbar_nav a:hover {
@@ -104,10 +101,7 @@ body {
     padding-bottom: 0;
     padding-top: 0;
 }
-.bottombar_nav a:link {
-    color: #F9C700;
-}
-.bottombar_nav a:visited {
+.bottombar_nav a {
     color: #F9C700;
 }
 .bottombar_nav a:hover {
